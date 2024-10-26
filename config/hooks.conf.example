@@ -1,0 +1,47 @@
+# WHM/cPanel Hook Configuration Sample
+[hooks]
+# Domain Events
+on_domain_create = "true"
+on_domain_delete = "true"
+on_domain_suspend = "true"
+on_domain_unsuspend = "true"
+on_domain_modify = "true"
+
+# Package Events
+on_package_create = "true"
+on_package_delete = "true"
+on_package_modify = "true"
+
+# User Events
+on_user_create = "true"
+on_user_delete = "true"
+on_user_modify = "true"
+
+# Addon Events
+on_addon_purchase = "true"
+on_addon_cancel = "true"
+on_addon_suspend = "true"
+
+# DNS Events
+on_dns_zone_create = "true"
+on_dns_zone_delete = "true"
+on_dns_record_add = "true"
+on_dns_record_delete = "true"
+
+# Backup Events
+include_in_backup = "true"
+backup_retention = "30"  # days
+
+# Installation Defaults
+[defaults]
+create_dns_records = "true"
+setup_mx_records = "true"
+configure_spf = "true"
+configure_dkim = "true"
+configure_dmarc = "true"
+
+# Event Handlers
+[handlers]
+provision_handler = "VenMail\\WHMPlugin\\Handlers\\ProvisionHandler"
+dns_handler = "VenMail\\WHMPlugin\\Handlers\\DNSHandler"
+backup_handler = "VenMail\\WHMPlugin\\Handlers\\BackupHandler"

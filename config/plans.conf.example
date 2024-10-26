@@ -1,0 +1,36 @@
+# VenMail Plan Mappings Sample
+[solo]
+venmail_plan_id = "4"
+name = "Solo Plan"
+description = "Free plan for solo founders"
+monthly_price = "0.00"
+yearly_price = "0.00"
+max_users = 1
+storage = "5"  # GB
+
+[startup]
+venmail_plan_id = "1"
+name = "Standard Email"
+description = "Standard business email for startups"
+monthly_price = "4.99"
+yearly_price = "49.99"
+max_users = 8
+storage = "120"  # GB
+
+[business]
+venmail_plan_id = "2"
+name = "Standard Email"
+description = "Standard business email for startups"
+monthly_price = "23.99"
+yearly_price = "239.99"
+max_users = 24
+storage = "600"  # GB
+
+[enterprise]
+venmail_plan_id = "3"
+name = "Enterprise Email"
+description = "Complete email solution for large organizations"
+monthly_price = "99.99"
+yearly_price = "999.99"
+storage = "1200"  # GB
+max_users = 50

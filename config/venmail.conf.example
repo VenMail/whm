@@ -1,0 +1,46 @@
+# VenMail API Configuration Sample
+api_base_url = "https://m.venmail.io"
+api_token = "YOUR_PARTNER_API_TOKEN"
+partner_id = "YOUR_PARTNER_ID"
+
+# Debug and Logging
+debug_mode = false
+log_level = "INFO"  # DEBUG, INFO, WARNING, ERROR
+log_retention_days = 7
+
+# Cache Settings
+cache_enabled = true
+cache_ttl = 3600  # 1 hour in seconds
+cache_dir = "cache"
+
+# API Timeouts
+connect_timeout = 5
+request_timeout = 30
+
+# Rate Limiting
+rate_limit_enabled = true
+rate_limit_requests = 100
+rate_limit_period = 60  # seconds
+
+# DNS Configuration
+dns_verify_timeout = 300  # seconds
+dns_propagation_wait = 600  # seconds
+dns_retry_attempts = 3
+dns_retry_delay = 300  # seconds
+
+# Security
+enforce_ssl = true
+verify_ssl = true
+allowed_ip_ranges = ""  # Comma-separated list of IP ranges
+
+# Proxy Configuration (if needed)
+proxy_enabled = false
+proxy_host = ""
+proxy_port = ""
+proxy_username = ""
+proxy_password = ""
+
+# Notification Settings
+notifications_enabled = true
+notification_email = "admin@yourdomain.com"
+notification_events = "error,provision_failure,dns_failure"

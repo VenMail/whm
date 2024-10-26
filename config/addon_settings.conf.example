@@ -1,0 +1,53 @@
+# VenMail Addon Settings
+enabled = "true"
+addon_name = "VenMail Professional Email"
+addon_description = "Professional email hosting with advanced features"
+
+# Default Plan Settings
+default_plan_id = "1"
+pricing_mode = "monthly"  # monthly or yearly
+show_in_signup = "true"
+default_enabled = "true"
+
+# DNS Integration
+auto_dns_setup = "true"
+verify_dns_after_setup = "true"
+dns_setup_retries = "3"
+
+# User Interface
+show_usage_stats = "true"
+show_dns_status = "true"
+enable_bulk_operations = "true"
+
+# Email Templates
+welcome_email_enabled = "true"
+welcome_email_template = "default"
+dns_setup_email_enabled = "true"
+dns_setup_email_template = "default"
+
+# Billing Integration
+billing_enabled = "true"
+billing_cycle = "monthly"
+prorate_upgrades = "true"
+prorate_downgrades = "true"
+
+# Support Integration
+support_ticket_on_failure = "true"
+support_department = "Hosting Support"
+support_priority = "Medium"
+
+# Feature Flags
+enable_api_access = "true"
+enable_smtp_relay = "true"
+enable_archiving = "true"
+enable_encryption = "true"
+
+# Limits and Quotas
+max_domains_per_user = "0"  # 0 for unlimited
+max_bulk_operations = "100"
+queue_timeout = "3600"
+
+# Custom Branding
+custom_logo_url = ""
+custom_css_url = ""
+brand_color = "#0066cc"

@@ -1,0 +1,28 @@
+{
+    "name": "VenMail Email Manager",
+    "description": "Professional email service integration",
+    "version": "1.0.0",
+    "type": "whostmgr",
+    "category": "Mail",
+    "url": "venmail",
+    "author": "VenMail",
+    "acls": [
+        "manage_email_services",
+        "edit_dns",
+        "add_on_management",
+        "create_user_session",
+        "list_users",
+        "modify_zones",
+        "manage_zones"
+    ],
+    "display": "VenMail",
+    "scripts": {
+        "install": "scripts/install.php",
+        "uninstall": "scripts/uninstall.php",
+        "upgrade": "scripts/upgrade.php"
+    },
+    "app_root": "venmail",
+    "html_dir": "html",
+    "render_type": "modern",
+    "min_whm_version": "102.0.0"
+}
